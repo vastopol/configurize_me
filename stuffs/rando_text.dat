@@ -1,0 +1,86 @@
+Extra Software for Ubuntu 16.04LTS
+==================================
+
+0. should come preinstalled
+----------------------------------
+* nano, awk, grep, sed, dc, bc,
+* gcc, g++, gdb, make, python, python3,
+* ruby, perl, tclsh,
+
+
+1. sudo apt-get install <package>
+----------------------------------
+* vim         = text editor
+* emacs       = text editor
+* git         = version control system
+* gdebi       = .deb file installer
+* elinks      = text based web browser
+* graphviz    = graph generator
+* flex        = lexer analyzer generator
+* bison       = parser generator
+* clang       = c/c++ compiler
+* valgrind    = debug helper
+* nasm        = netwide portable 80x86 assembler
+* ghc         = haskell compiler
+* gprolog     = gnu prolog
+* gforth      = gnu forth
+* gcl         = gnu common lisp
+* ecl         = embeddable common lisp
+* sbcl        = steel bank common lisp
+* clisp       = common lisp
+* zenlisp     = small lisp implementation
+* mit-scheme  = scheme mostly r5rs
+* racket      = racket language
+* qemu        = emulator virtual machine
+* vagrant     = vm environment manager
+* virtualbox  = emulator virtual machine
+* virtualbox-ext-pack  = extention package
+* vlc         = media player
+* arduino     = IDE for arduino boards
+* wine        = windows emulator
+* partimage   = disk backup
+* lsscsi      = disk pathfinder
+* sox         = sound processing
+* ctags       = programming tool
+* tlp         = power setting manager
+* ipython
+* python-nose
+* postgresql
+* python3
+* python3-pip
+* brasero
+
+
+2. download source as .deb file
+----------------------------------
+* google chrome
+
+
+3. install from tar.gz with pip
+----------------------------------
+* electrum = bitcoin wallet
+  1. sudo apt-get install python-qt4 python-pip
+  2. sudo pip2 install https://download.electrum.org/2.9.3/Electrum-2.9.3.tar.gz
+
+
+4. add repository and then install
+-----------------------------------
+* atom = text editor
+  1. sudo add-apt-repository ppa:webupd8team/atom
+  2. sudo apt update; sudo apt install atom
+
+
+5. mate desktop
+-----------------------
+
+sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
+sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+
+Vanilla mate:
+mate-desktop-environment-core 
+mate-desktop-environment 
+mate-desktop-environment-extras
+
+Ubuntu Mate:
+sudo apt-get install ubuntu-mate-core ubuntu-mate-desktop
+

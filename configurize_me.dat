@@ -1,0 +1,24 @@
+have one big shell script which executes smaller scripts
+will need already installed as prerequesites:
+* bash
+* apt
+
+1. checker script
+    - run sanity check if apt installed, if not exit
+    - if needed install git, -python-pip, python3-pip3   
+    - run apt-get upgrade && apt-get update
+2. apt script
+    - have it read from a special file _apt_install
+    - file will specify packages to install separated by newlines
+    - goes through the list installs the packages
+    - collect and report statistics on the inatallation
+3. pip
+4. pip3
+5. git
+    - set global push, global name, global email, etc...
+    - install git repos specified, use git clone
+
+
+most likely will use shell scripting
+can check if things exist by checking with "which PRGM_NAME" just variable swap for each name in list.
+

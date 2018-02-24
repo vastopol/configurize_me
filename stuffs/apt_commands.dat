@@ -1,0 +1,22 @@
+
+managing stuffs using
+apt-get && apt-cache
+--------------------------
+
+apt-get update
+
+apt-get upgrade
+
+apt-get dist-upgrade
+
+apt-get check
+
+apt-get clean
+
+apt-get autoclean
+
+apt-get -f install
+
+apt-get autoremove
+
+
