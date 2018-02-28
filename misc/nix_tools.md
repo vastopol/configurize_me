@@ -14,8 +14,8 @@ Some may come installed with the distribution
   * grep
   * sed
   * awk
-  * yacc / bison
-  * lex / flex
+  * bison (yacc)
+  * flex (lex)
   * make
   * git
   * info
@@ -23,7 +23,9 @@ Some may come installed with the distribution
   * troff / groff
   * chmod
   * graphviz
-  * csh
+  * csh / tcsh
+  * fish
+  * zsh
 
 * Text Editors
   * sublime

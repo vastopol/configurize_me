@@ -11,12 +11,14 @@ apt-get dist-upgrade
 
 apt-get check
 
+apt-get -f install
+
+apt-get install --fix-missing
+
+apt-get update --fix-missing
+
 apt-get clean
 
 apt-get autoclean
 
-apt-get -f install
-
 apt-get autoremove
-
-
