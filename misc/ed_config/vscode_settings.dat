@@ -1,0 +1,6 @@
+// this is an undocumented hidden setting to turn off auto hover
+// has to be put int he workspace settings file "settings.json"
+
+{
+    "editor.hover": false
+}

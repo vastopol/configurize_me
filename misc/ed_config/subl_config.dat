@@ -1,0 +1,12 @@
+// user key binding for sublime text, turn of auto complete of bracket, parens, braces, ...
+
+[
+	{
+	    "keys": ["ctrl+shift+p"],
+	    "command": "toggle_setting",
+	    "args":
+	    {
+	        "setting": "auto_match_enabled"
+	    }
+	} 
+]
