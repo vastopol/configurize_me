@@ -1,14 +1,19 @@
 #!/bin/bash
 
-# main driver for handling each part of configuration and installation
-# broken up into multiple sections, each runs a series of smaller scripts
+# main driver for handling download, installation, setup, and configuration
+# in multiple sections, each runs scripts for a specific tool/package manager
+
+# BASH
+source brc_config.sh
 
 # APT
-apt_init.sh
-
-# more stuff
-
-apt_cleanup.sh
+source apt_init.sh
+source apt_install.sh
+source apt_cleanup.sh
 
 # GIT
-git_set.sh
+source git_set.sh
+
+# PIP
+
+# NPM

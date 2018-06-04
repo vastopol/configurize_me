@@ -40,4 +40,3 @@ warning: user.email has multiple values
 error: cannot overwrite multiple values with a single value
        Use a regexp, --add or --replace-all to change user.email.
 push.default=simple
-
