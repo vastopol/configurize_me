@@ -16,3 +16,4 @@ echo "adding user aliases"
 echo "" >> $BRC
 echo "# User aliases:" >> $BRC
 echo "alias gh='git config -l'" >> $BRC
+echo "alias rewifi='service network-manager restart'" >> $BRC

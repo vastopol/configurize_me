@@ -1,0 +1,32 @@
+// random stuff
+
+apt install:
+- octave
+
+
+# searching for packages to install
+# basic, scheme, lisp, etc...
+
+$ apt-cache search package_name | grep package_name
+
+basic | BASIC
+basic256 - educational BASIC programming environment for children
+brandy - BBC BASIC V interpreter
+bwbasic - Bywater BASIC Interpreter
+
+
+lisp | LISP
+rep
+oaklisp
+
+
+scheme | scheme
+mit-scheme
+plt-scheme        # old version of racket
+elk
+ssss
+scheme2c
+scheme9
+scheme48
+tinyscheme
+scsh-common-0.6

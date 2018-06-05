@@ -1,0 +1,17 @@
+java is terrible
+//--------------------------------------------
+
+Install Oracle Java 9 (JDK9) in Ubuntu, Linux Mint or Debian via PPA
+
+To add the WebUpd8 Oracle Java PPA and install Oracle Java 9 in all supported Ubuntu / Linux Mint versions, use the following commands:
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java9-installer
+
+
+//--------------------------------------------
+
+eclipse
+intelliJ
+vscode
