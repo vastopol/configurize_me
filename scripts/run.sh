@@ -4,15 +4,13 @@
 # in multiple sections, each runs scripts for a specific tool/package manager
 
 # BASH
-source brc_config.sh
+source bashrc_config.sh
 
 # APT
-source apt_init.sh
-source apt_install.sh
-source apt_cleanup.sh
+source apt_config.sh
 
 # GIT
-source git_set.sh
+source git_config.sh
 
 # PIP
 
