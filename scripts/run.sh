@@ -9,9 +9,8 @@ source bashrc_config.sh
 # APT
 source apt_config.sh
 
+# PIP
+source pip_config.sh
+
 # GIT
 source git_config.sh
-
-# PIP
-
-# NPM

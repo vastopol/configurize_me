@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# probably not a good way to check if exists... fix later
+# script will first update/upgrade packages and distribution
+# then install requirements and the user's packages
+# final will clean and remove not needed packages
+
+# see if apt installed
 EXISTS1=$(eval "which apt")
 EXISTS2=$(eval "which apt-get")
 EXISTS3=$(eval "which apt-cache")
 
-# see if minimum requirements installed
 if   [ $EXISTS1 != "/usr/bin/apt" ] ; then
     echo "ERROR: package 'apt' not installed"
     exit 1
@@ -17,23 +20,36 @@ elif [ $EXISTS3 != "/usr/bin/apt-cache" ] ; then
     exit 1
 fi
 
-# preliminary check && update
+# preliminary checks && updates
 apt-get check
 apt-get update
 apt-get upgrade
 apt-get dist-upgrade
+apt install update-manager-core
+do-release-upgrade
 
-# try and install mandatory packages for next stages
+# install mandatory packages for next stages
+echo "installing required packages"
 apt install git
-apt install pip2
-apt install pip3
-apt install npm
+apt install python-pip
+apt install python3-pip
 
-echo "main apt install"
-# process a text file with the names of packages to install
+# install packages from user file
+APT_FILE="apt_list.txt"
+
+if   ! [ -f $APT_FILE ] ; then
+    echo "ERROR: file $APT_FILE does not exist"
+    exit 1
+fi
+
+echo "installing user packages"
+
+
+# process text file with the names of packages to install
+echo "fixme not done yet"
+cat apt_list.text
 
 
 # after the install process clean up loose ends
 apt-get autoclean
 apt-get autoremove
-etc...
