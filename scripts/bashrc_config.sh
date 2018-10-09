@@ -20,7 +20,7 @@ echo "" >> $BRC
 # user aliases
 #----------------------------------------
 
-echo "alias gh='git config -l'" >> $BRC
+echo "alias gh='echo \"\"; git config -l; echo \"\"'" >> $BRC
 echo "alias rewifi='service network-manager restart'" >> $BRC
 
 #----------------------------------------
@@ -39,9 +39,6 @@ function git_srich()
     GIT_PUSH=simple
     GIT_EDIT=nano
 
-    echo ""
-    echo "OLD:"
-    git config -l
     rm ~/.gitconfig
 
     git config --global user.name    $GIT_NAME
@@ -49,7 +46,8 @@ function git_srich()
     git config --global push.default $GIT_PUSH
     git config --global core.editor  $GIT_EDIT
 
-    echo "NEW:"
+    echo ""
+    echo "NOW:"
     git config -l
     echo ""
 }' >> $BRC
@@ -62,9 +60,6 @@ function git_vast()
     GIT_PUSH=simple
     GIT_EDIT=nano
 
-    echo ""
-    echo "OLD:"
-    git config -l
     rm ~/.gitconfig
 
     git config --global user.name    $GIT_NAME
@@ -72,7 +67,8 @@ function git_vast()
     git config --global push.default $GIT_PUSH
     git config --global core.editor  $GIT_EDIT
 
-    echo "NEW:"
+    echo ""
+    echo "NOW:"
     git config -l
     echo ""
 }' >> $BRC
@@ -87,5 +83,5 @@ echo "" >> $BRC
 #---------------------------------------
 
 echo "echo \"GIT PROFILE\"" >> $BRC
-echo "gh | grep \"user.name\"" >> $BRC
+echo "git config -l | grep \"user.name\"" >> $BRC
 echo "echo \"\"" >> $BRC
