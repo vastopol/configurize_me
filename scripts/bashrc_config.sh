@@ -2,7 +2,7 @@
 
 # add user aliases and functions to the .bashrc file
 
-BRC="~/.bashrc"
+BRC=~/.bashrc
 
 if ! [ -f $BRC ] ; then
     echo "ERROR: file '~/.bashrc' does not exist"
@@ -15,6 +15,7 @@ echo "" >> $BRC
 echo "#----------------------------------------" >> $BRC
 echo "" >> $BRC
 echo "# User aliases:" >> $BRC
+echo "" >> $BRC
 
 # user aliases
 #----------------------------------------
@@ -38,6 +39,7 @@ function git_srich()
     GIT_PUSH=simple
     GIT_EDIT=nano
 
+    echo ""
     echo "OLD:"
     git config -l
     rm ~/.gitconfig
@@ -49,8 +51,8 @@ function git_srich()
 
     echo "NEW:"
     git config -l
-}
-' >> $BRC
+    echo ""
+}' >> $BRC
 
 echo '
 function git_vast()
@@ -60,6 +62,7 @@ function git_vast()
     GIT_PUSH=simple
     GIT_EDIT=nano
 
+    echo ""
     echo "OLD:"
     git config -l
     rm ~/.gitconfig
@@ -71,7 +74,18 @@ function git_vast()
 
     echo "NEW:"
     git config -l
-}
-' >> $BRC
+    echo ""
+}' >> $BRC
 
 #----------------------------------------
+
+echo "" >> $BRC
+echo "# User run on login:" >> $BRC
+echo "" >> $BRC
+
+# user commands to run when open terminal
+#---------------------------------------
+
+echo "echo \"GIT PROFILE\"" >> $BRC
+echo "gh | grep \"user.name\"" >> $BRC
+echo "echo \"\"" >> $BRC
