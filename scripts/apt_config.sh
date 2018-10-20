@@ -34,8 +34,11 @@ apt install git
 apt install python-pip
 apt install python3-pip
 
-# install packages from user file
+# process file && try and install packages
 APT_FILE="apt_list.txt"
+ARRAY1=() # package names
+ARRAY2=() # error indices
+ERRVAL=0  # start index
 
 if   ! [ -f $APT_FILE ] ; then
     echo "ERROR: file $APT_FILE does not exist"
@@ -44,11 +47,33 @@ fi
 
 echo "installing user packages"
 
+# read file to array
+while read -r VAR
+do
+    ARRAY1+=($VAR)
+done < $APT_FILE
 
-# process text file with the names of packages to install
-echo "fixme not done yet"
-cat apt_list.text
+# try install, keep index of errors
+for i in "${ARRAY1[@]}"
+do
+    if ! apt install $i
+    then
+        echo "Failed to install $i"
+        ARRAY2+=($ERRVAL)
+        let "ERRVAL += 1"
+        continue
+    fi
+    let "ERRVAL += 1"
+done
 
+# print packages couldnt install
+if ! [ ${#ARRAY2[@]} -eq 0 ] ; then
+    echo "could not install packages:"
+    for i in "${ARRAY2[@]}"
+    do
+        echo ${ARRAY1[$i]}
+    done
+fi
 
 # after the install process clean up loose ends
 apt-get autoclean

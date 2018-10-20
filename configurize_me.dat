@@ -11,6 +11,7 @@ will need already installed as prerequesites:
     - have it read from a requirements file with packages listed
     - goes through the list installs the packages
     - collect and report statistics on the installation (maybe)
+    - note: it is important that the apt_list.txt ends with new line at bottom or last package might not get read in
 3. pip && pip3
     - install packages with requirements file
 4. git
@@ -22,15 +23,3 @@ will need already installed as prerequesites:
 using pip/pip3 can have a preconfigured requirements file
     "pip install -r requirements.txt"
 
---------------------
-
-probably not a good way to check if exists... fix later
-
-can check if things are installed by checking with "which PRGM_NAME" just variable swap for each name in list.
-
-EXISTS1=$(eval "which git")
-
-if   [ $EXISTS1 != "/usr/bin/git" ] ; then
-    echo "ERROR: package 'git' not installed"
-    exit 1
-fi

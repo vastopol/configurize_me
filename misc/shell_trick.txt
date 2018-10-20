@@ -1,0 +1,46 @@
+probably not a good way to check if exists... fix later
+
+can check if things are installed by checking with "which PRGM_NAME" just variable swap for each name in list.
+
+EXISTS1=$(eval "which git")
+
+if   [ $EXISTS1 != "/usr/bin/git" ] ; then
+    echo "ERROR: package 'git' not installed"
+    exit 1
+fi
+
+--------------------
+
+possible method for install packages from file && error check
+
+APT_FILE="apt_list.txt"
+
+ARRAY1=() # package names
+ARRAY2=() # error indices
+ERRVAL=0  # start index
+
+# read file to array
+while read -r VAR
+do
+    ARRAY1+=($VAR)
+done < $APT_FILE
+
+# try install, keep index of errors
+for i in "${ARRAY1[@]}"
+do
+    if ! apt install $i
+    then
+        echo "Failed to install $i"
+        ARRAY2+=($ERRVAL)
+        let "ERRVAL += 1"
+        continue
+    fi
+    let "ERRVAL += 1"
+done
+
+# print packages couldnt install
+for i in "${ARRAY2[@]}"
+do
+    echo ${ARRAY1[$i]}
+done
+

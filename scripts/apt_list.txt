@@ -2,3 +2,6 @@ ed
 vim
 emacs
 nano
+python
+python3
+
