@@ -1,0 +1,55 @@
+Extra Software for Ubuntu 16.04LTS
+========================================
+
+1. download source as .deb file
+----------------------------------------
+
+* google chrome
+
+
+2. install from tar.gz with pip
+----------------------------------------
+
+* electrum = bitcoin wallet
+
+    sudo apt-get install python-qt4 python-pip
+    sudo pip2 install https://download.electrum.org/2.9.3/Electrum-2.9.3.tar.gz
+
+
+3. add repository and then install
+----------------------------------------
+
+* atom text editor
+
+    sudo add-apt-repository ppa:webupd8team/atom
+    sudo apt update; sudo apt install atom
+
+* mate desktop
+
+    sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
+    sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+
+    Vanilla mate:
+    mate-desktop-environment-core
+    mate-desktop-environment
+    mate-desktop-environment-extras
+
+    Ubuntu Mate:
+    sudo apt-get install ubuntu-mate-core ubuntu-mate-desktop
+
+* Java (is terrible)
+
+    Install Oracle Java 9 (JDK9) in Ubuntu, Linux Mint or Debian via PPA
+
+    To add the WebUpd8 Oracle Java PPA and install Oracle Java 9 in all supported Ubuntu / Linux Mint versions, use the following commands:
+
+    sudo add-apt-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java9-installer
+
+    also editors for it:
+
+    eclipse
+    intelliJ
+    vscode
+

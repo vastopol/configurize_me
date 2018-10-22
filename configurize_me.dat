@@ -14,12 +14,25 @@ will need already installed as prerequesites:
     - note: it is important that the apt_list.txt ends with new line at bottom or last package might not get read in
 3. pip && pip3
     - install packages with requirements file
+    - using pip/pip3 can have a preconfigured requirements file
+        "pip install -r requirements.txt"
 4. git
-    - set global push, global name, global email, etc...
-    - install git repos specified, using git clone
+    - set global: name, email, push, editor
+    - clone specified git repositories
 
---------------------
+----------------------------------------
 
-using pip/pip3 can have a preconfigured requirements file
-    "pip install -r requirements.txt"
+todo:
 
+finish the git script:
+    - make folder and download repositories into it
+
+edit requirements files
+    - apt packages to install
+    - pip packages to install
+    - git repositories to download
+
+maybe write a script to install the extra things that require different steps
+    - download .deb files
+    - add repositories then apt install
+    - etc...

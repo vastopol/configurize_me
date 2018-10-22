@@ -1,6 +1,64 @@
 List of useful tools for linux
 Some may come installed with the distribution
 
+sort this all out later
+
+
+0. should come preinstalled
+----------------------------------
+* nano, awk, grep, sed, dc, bc,
+* gcc, g++, gdb, make, python, python3,
+* ruby, perl, tclsh,
+
+
+1. sudo apt-get install <package>
+----------------------------------
+* vim         = text editor
+* emacs       = text editor
+* git         = version control system
+* gdebi       = .deb file installer
+* elinks      = text based web browser
+* graphviz    = graph generator
+* flex        = lexer analyzer generator
+* bison       = parser generator
+* clang       = c/c++ compiler
+* valgrind    = debug helper
+* nasm        = netwide portable 80x86 assembler
+* ghc         = haskell compiler
+* gprolog     = gnu prolog
+* swi-prolog
+* gforth      = gnu forth
+* gcl         = gnu common lisp
+* ecl         = embeddable common lisp
+* sbcl        = steel bank common lisp
+* clisp       = common lisp
+* zenlisp     = small lisp implementation
+* mit-scheme  = scheme mostly r5rs
+* racket      = racket language
+* qemu        = emulator virtual machine
+* vagrant     = vm environment manager
+* virtualbox  = emulator virtual machine
+* virtualbox-ext-pack  = extention package
+* vlc         = media player
+* arduino     = IDE for arduino boards
+* wine        = windows emulator
+* partimage   = disk backup
+* lsscsi      = disk pathfinder
+* sox         = sound processing
+* ctags       = programming tool
+* tlp         = power setting manager
+* ipython
+* python-nose
+* postgresql
+* python3
+* python3-pip
+* brasero
+* scala
+* radare2
+* hexedit
+
+--------------------
+
 * Web
   * firefox esr
   * elinks
@@ -80,3 +138,76 @@ Some may come installed with the distribution
 
   * haskell
     * ghc
+
+
+// random stuff
+
+apt install:
+- octave
+
+
+# searching for packages to install
+# basic, scheme, lisp, etc...
+
+$ apt-cache search package_name | grep package_name
+
+basic | BASIC
+basic256 - educational BASIC programming environment for children
+brandy - BBC BASIC V interpreter
+bwbasic - Bywater BASIC Interpreter
+
+
+lisp | LISP
+rep
+oaklisp
+
+
+scheme | scheme
+mit-scheme
+plt-scheme        # old version of racket
+elk
+ssss
+scheme2c
+scheme9
+scheme48
+tinyscheme
+scsh-common-0.6
+
+
+Hasty Generalizations an=bout languages
+----------------------------------------
+
+* OOP/Structural
+  * C
+  * C++
+  * Java
+  * C#
+  * D
+
+* General
+  * Go
+  * Scala
+
+* Functional/Logical
+  * Lisp, Scheme, Clojure
+  * Haskell
+  * ML
+  * Ocaml
+  * Forth/Factor
+  * erlang
+  * F#
+
+
+* Scripting
+  * sh
+  * awk
+  * perl
+  * python
+  * ruby
+  * tcl
+
+* Web
+  * javascript
+  * html
+  * css
+  * php
