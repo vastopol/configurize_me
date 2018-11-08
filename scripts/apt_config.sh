@@ -20,13 +20,13 @@ elif [ $EXISTS3 != "/usr/bin/apt-cache" ] ; then
     exit 1
 fi
 
-# preliminary checks && updates
+# preliminary checks, updates, upgrades
 apt-get check
 apt-get update
 apt-get upgrade
 apt-get dist-upgrade
 apt install update-manager-core
-do-release-upgrade
+#do-release-upgrade
 
 # install mandatory packages for next stages
 echo "installing required packages"

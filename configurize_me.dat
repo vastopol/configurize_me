@@ -6,12 +6,12 @@ will need already installed as prerequesites:
 1. bashrc script
     - add user aliases
     - add user functions
-2. apt script
+2. apt scripts
+    - update, upgrade, etc... ( can enable "do-release-upgrade" )
     - if needed install git, python-pip, python3-pip
     - have it read from a requirements file with packages listed
     - goes through the list installs the packages
     - collect and report statistics on the installation (maybe)
-    - note: it is important that the apt_list.txt ends with new line at bottom or last package might not get read in
 3. pip && pip3
     - install packages with requirements file
     - using pip/pip3 can have a preconfigured requirements file
@@ -20,19 +20,15 @@ will need already installed as prerequesites:
     - set global: name, email, push, editor
     - clone specified git repositories
 
+
+note: it is important that requirements.txt ends with new line at bottom or last package might not get read in
+
 ----------------------------------------
 
 todo:
-
-finish the git script:
-    - make folder and download repositories into it
 
 edit requirements files
     - apt packages to install
     - pip packages to install
     - git repositories to download
 
-maybe write a script to install the extra things that require different steps
-    - download .deb files
-    - add repositories then apt install
-    - etc...

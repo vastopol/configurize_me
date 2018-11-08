@@ -1,0 +1,3 @@
+https://github.com/vastopol/FP_Interpreter.git
+https://github.com/vastopol/LISP.git
+https://github.com/vastopol/uexp.git
