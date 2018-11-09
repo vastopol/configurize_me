@@ -1,3 +1,5 @@
-https://github.com/vastopol/FP_Interpreter.git
+https://github.com/vastopol/configurize_me.git
 https://github.com/vastopol/LISP.git
-https://github.com/vastopol/uexp.git
+https://github.com/vastopol/forth.git
+https://github.com/vastopol/dev.git
+https://github.com/vastopol/stackulator.git

@@ -7,7 +7,7 @@ will need already installed as prerequesites:
     - add user aliases
     - add user functions
 2. apt scripts
-    - update, upgrade, etc... ( can enable "do-release-upgrade" )
+    - update, upgrade, etc...
     - if needed install git, python-pip, python3-pip
     - have it read from a requirements file with packages listed
     - goes through the list installs the packages
@@ -19,7 +19,8 @@ will need already installed as prerequesites:
 4. git
     - set global: name, email, push, editor
     - clone specified git repositories
-
+5. Release upgrade for Ubuntu
+    - enable "do-release-upgrade"
 
 note: it is important that requirements.txt ends with new line at bottom or last package might not get read in
 
@@ -32,3 +33,4 @@ edit requirements files
     - pip packages to install
     - git repositories to download
 
+maybe add error logging for pip_config && apt_extras

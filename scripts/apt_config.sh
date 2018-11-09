@@ -25,8 +25,6 @@ apt-get check
 apt-get update
 apt-get upgrade
 apt-get dist-upgrade
-apt install update-manager-core
-#do-release-upgrade
 
 # install mandatory packages for next stages
 echo "installing required packages"
@@ -53,12 +51,16 @@ do
     ARRAY1+=($VAR)
 done < $APT_FILE
 
+if [ ${#ARRAY1[@]} -eq 0  ] ; then
+    exit 1
+fi
+
 # try install, keep index of errors
 for i in "${ARRAY1[@]}"
 do
     if ! apt install $i
     then
-        echo "Failed to install $i"
+        echo "Failed to apt install $i"
         ARRAY2+=($ERRVAL)
         let "ERRVAL += 1"
         continue
@@ -68,10 +70,11 @@ done
 
 # print packages couldnt install
 if ! [ ${#ARRAY2[@]} -eq 0 ] ; then
-    echo "could not install packages:"
+    date >> error_log.txt
+    echo "could not install packages:" >> error_log.txt
     for i in "${ARRAY2[@]}"
     do
-        echo ${ARRAY1[$i]}
+        echo ${ARRAY1[$i]} >> error_log.txt
     done
 fi
 

@@ -2,7 +2,7 @@ ed
 vim
 emacs
 nano
-awk
+gawk
 grep
 sed
 dc
@@ -31,3 +31,4 @@ clisp
 zenlisp
 mit-scheme
 racket
+

@@ -6,7 +6,7 @@ sort this all out later
 
 0. should come preinstalled
 ----------------------------------
-* nano, awk, grep, sed, dc, bc,
+* nano, gawk, grep, sed, dc, bc,
 * gcc, g++, gdb, make, python, python3,
 * ruby, perl, tclsh,
 

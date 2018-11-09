@@ -16,3 +16,7 @@ source pip_config.sh
 # GIT
 source git_config.sh
 source git_downl.sh
+
+# UPGRADE
+source upgrade.sh
+
