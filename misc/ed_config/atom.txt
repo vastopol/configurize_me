@@ -1,0 +1,85 @@
+configuring atom
+
+Ctrl+, to get to settings
+
+----------------------------------------
+
+EDITOR
+
+1. change tab length to default size 4
+
+2. enable scroll past end
+
+3. disable auto indent on paste
+
+----------------------------------------
+
+CHANGE/DISABLE PACKAGES
+
+goto packages and change/disable things
+
+1. stop auto match "" '' () [] {}
+    package : bracket-matcher
+    disable the Autocomplete Brackets
+
+2. stop removing trailing whitespace on save
+    package: whitespace
+    uncheck Ensure Single Trailing Newline option
+
+3 stop autocomplete with enter
+    package: autocomplete-plus
+    set keymap for confirming suggestion to only tabs
+
+4. normal Ctrl+tab switching
+    package: tabs
+    Uncheck “Enable MRU Tab Switching”
+
+----------------------------------------
+
+INSTALL PACKAGES
+
+1. install community packages through atom package manager
+https://atom.io/packages/<package>
+apm install <package>
+
+
+some seem broken so might need to disable some
+
+?? broke ??
+asteroids
+eval
+pep8
+atom-java-decompiler
+execute-as-perl
+
+
+working:
+
+autocomplete-java
+execute
+execute-as-ruby
+java-bytecode-disassembler
+language-65asm
+language-arm
+language-ebnf
+language-haskell
+language-mips
+language-latex
+language-lisp
+language-prolog
+language-scala
+language-scheme
+language-sml
+language-x86
+language-x86asm
+language-x86-64-assembly
+language-lc3
+latex
+make-executable
+pdf-view
+script
+todo-show
+
+
+
+

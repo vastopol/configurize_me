@@ -1,0 +1,368 @@
+List of useful tools for linux
+Some may come installed with the distribution
+
+sort this all out later
+
+
+0. should come preinstalled
+----------------------------------
+* nano, gawk, grep, sed, dc, bc,
+* gcc, g++, gdb, make, python, python3,
+* ruby, perl, tclsh,
+
+
+1. sudo apt-get install <package>
+----------------------------------
+* vim         = text editor
+* emacs       = text editor
+* git         = version control system
+* gdebi       = .deb file installer
+* elinks      = text based web browser
+* graphviz    = graph generator
+* flex        = lexer analyzer generator
+* bison       = parser generator
+* clang       = c/c++ compiler
+* valgrind    = debug helper
+* nasm        = netwide portable 80x86 assembler
+* ghc         = haskell compiler
+* gprolog     = gnu prolog
+* swi-prolog
+* gforth      = gnu forth
+* gcl         = gnu common lisp
+* ecl         = embeddable common lisp
+* sbcl        = steel bank common lisp
+* clisp       = common lisp
+* zenlisp     = small lisp implementation
+* mit-scheme  = scheme mostly r5rs
+* racket      = racket language
+* qemu        = emulator virtual machine
+* vagrant     = vm environment manager
+* virtualbox  = emulator virtual machine
+* virtualbox-ext-pack  = extention package
+* vlc         = media player
+* arduino     = IDE for arduino boards
+* wine        = windows emulator
+* partimage   = disk backup
+* lsscsi      = disk pathfinder
+* sox         = sound processing
+* ctags       = programming tool
+* tlp         = power setting manager
+* ipython
+* python-nose
+* postgresql
+* python3
+* python3-pip
+* brasero
+* scala
+* radare2
+* hexedit
+* fpc = free pascal compiler
+
+--------------------
+
+* Web
+  * firefox esr
+  * elinks
+
+* Media
+  * vlc
+
+* Utilities
+  * bc
+  * dc
+  * grep
+  * sed
+  * awk
+  * bison (yacc)
+  * flex (lex)
+  * make
+  * git
+  * info
+  * binutils
+  * troff / groff
+  * chmod
+  * graphviz
+  * csh / tcsh
+  * fish
+  * zsh
+
+* Text Editors
+  * sublime
+  * nano
+  * vim
+  * loffice - libre office
+  * kwrite
+  * ed
+  * emacs
+
+* Languages
+  * C / C++
+    * gcc
+    * g++
+    * clang
+    * gdb
+    * valgrind
+
+  * Lisp / Scheme
+    * Common Lisp
+      * gcl
+      * sbcl
+
+    * Scheme
+      * mit scheme
+      * gambit
+      * chicken
+      * guile
+
+    * misc
+      * racket
+      * zenlisp
+
+  * python (ver 2.7)
+
+  * python3 (ver 3.x)
+
+  * perl (ver 5.x)
+
+  * ruby
+
+  * tcl/tk
+    * tclsh
+    * tk
+
+  * prolog
+    * swi-prolog
+    * gprolog
+
+  * forth
+    * gforth
+
+  * haskell
+    * ghc
+
+
+// random stuff
+
+apt install:
+- octave
+
+
+# searching for packages to install
+# basic, scheme, lisp, etc...
+
+$ apt-cache search package_name | grep package_name
+
+basic | BASIC
+basic256 - educational BASIC programming environment for children
+brandy - BBC BASIC V interpreter
+bwbasic - Bywater BASIC Interpreter
+
+
+lisp | LISP
+rep
+oaklisp
+
+
+scheme | scheme
+mit-scheme
+plt-scheme        # old version of racket
+elk
+ssss
+scheme2c
+scheme9
+scheme48
+tinyscheme
+scsh-common-0.6
+
+
+-------------
+
+
+
+APT PACKAGES
+
+mosh
+
+cccc
+
+devscripts
+
+mate
+mate-tweak
+ubuntu-mate-desktop
+
+filezilla
+vlc-nox
+
+git
+
+vim
+emacs
+
+tasksel
+
+rlwrap
+screen
+
+valgrind
+hexedit
+radare2
+
+cmake
+
+nasm
+clang
+ghc
+smlnj
+
+python-pip
+python3-pip
+
+default-jdk
+javacc
+
+RANDOM C COMPILER CRAP (using apt)
+
+libc6-dev-i386
+g++-multilib
+gcc-multilib
+
+
+random stuff too
+
+smlnj - standard ML of New Jersey
+
+htop
+nmap
+zenmap
+
+
+pcregrep
+gcc-multilib
+g++-multilib
+
+pep8
+
+texlive-binaries
+texlive-latex-base
+
+nethack-console
+screen
+sl
+lolcat
+
+joe
+
+gdc
+
+chicken-bin
+libreoffice
+algol68g
+gnat
+
+---------------------------------------
+
+GIT REPOS
+
+https://github.com/longld/peda
+
+---------------------------------------
+
+
+PIP PACKAGES
+
+pwntools (python2 only)
+
+---------------------------------------
+
+OCTAVE
+
+octave language package stuff....
+
+octave forge
+
+inside octave:
+
+pkg install -forge symbolic
+pkg load symbolic
+
+with pip need to install sympy:
+pip install sympy
+
+You are using pip version 8.1.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+
+---------------------------------------
+
+apt wtf
+
+cant install:
+
+troff
+lex
+yacc
+
+---------------------------------------
+
+virtual packages:
+
+Package guile is a virtual package provided by:
+  guile-2.0 2.0.11+1-10ubuntu0.1
+  guile-1.8 1.8.8+1-10ubuntu1
+You should explicitly select one to install.
+
+Package awk is a virtual package provided by:
+  original-awk:i386 2012-12-20-5
+  original-awk 2012-12-20-5
+  mawk:i386 1.3.3-17ubuntu2
+  gawk:i386 1:4.1.3+dfsg-0.1
+  mawk 1.3.3-17ubuntu2
+  gawk 1:4.1.3+dfsg-0.1
+You should explicitly select one to install.
+
+etc...
+
+The program 'guile' can be found in the following packages:
+ * guile-2.0
+ * guile-1.8
+
+---------------------------------------
+
+suggestions:
+
+arduino-mk avrdude-doc task-c-devel gcc-doc libjna-java-doc
+bison-doc
+clisp-doc clisp-dev slime
+slime ecl-doc
+elinks-doc tre-agrep
+gcl-doc
+fam voikko-fi hspell
+apache2-doc apache2-suexec-pristine apache2-suexec-custom
+libmcrypt-dev mcrypt mit-scheme-dbg mit-scheme-doc
+gnuplot-doc libiodbc2-dev libmysqlclient-dev graphicsmagick-dbg octave-info octave-doc octave-htmldoc xfig  ivtools-bin  tgif  transfig
+postgresql-doc locales-all postgresql-doc-9.5 libdbd-pg-perl isag
+python-coverage python-nose-doc
+qemu-user-static samba vde2 openbios-ppc openhackware sgabios ovmf
+rep-doc
+sbcl-doc sbcl-source slime
+scala-doc
+
+scheme48-doc cmuscheme48-el
+
+scsh-0.6-doc
+
+libterm-readline-gnu-perl | libterm-readline-perl-perl isdnutils-doc isdnutils-doc:i386 rng-tools:i386 libgd-tools:i386 gnutls-bin:i386 gphoto2:i386 gpm:i386 krb5-doc:i386 krb5-user:i386 jackd2:i386 libmyodbc
+odbc-postgresql tdsodbc unixodbc-bin libportaudio2:i386 hplip:i386 libsane-extras:i386 libsasl2-modules-otp:i386 libsasl2-modules-ldap:i386 libsasl2-modules-sql:i386 libsasl2-modules-gssapi-mit:i386
+| libsasl2-modules-gssapi-heimdal:i386 lm-sensors:i386 opencl-icd:i386 dosbox:any winbind
+
+zsh-doc
+
+libhsqldb1.8.0-java-gcj libreoffice-grammarcheck libreoffice-l10n-5.1 myspell-dictionary openclipart2-libreoffice | openclipart-libreoffice gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad
+libreoffice-officebean libreoffice-gcj libreoffice-report-builder libjtds-java libreoffice-mysql-connector | libmyodbc | libmysql-java libreoffice-sdbc-postgresql | odbc-postgresql | libpg-java libsqliteodbc
+| tdsodbc | mdbtools
+
+guile-1.8-doc
+guile-2.0-doc
+
+ gcc-4.9-locales gcc-4.9-multilib gcc-4.9-doc libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan1-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libquadmath0-dbg gnat-4.9-doc gnat-4.9-sjlj
+  gprbuild

@@ -34,3 +34,27 @@ edit requirements files
     - git repositories to download
 
 maybe add error logging for pip_config && apt_extras
+
+
+ alias terminatrix="terminator & exit"
+
+---
+
+add scripts for other package managers like atom apm or radare2
+
+atom
+
+apm install
+
+---
+
+radare2
+
+$R2PM_DBDIR: No such file or directory.
+Run 'r2pm init' to initialize the package repository
+
+
+---
+
+rename the scripts  and lists to have more coherent names
+
