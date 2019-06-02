@@ -19,7 +19,9 @@ will need already installed as prerequesites:
 4. git
     - set global: name, email, push, editor
     - clone specified git repositories
-5. Release upgrade for Ubuntu
+5. atom apm
+    - download community packages
+6. Release upgrade for Ubuntu
     - enable "do-release-upgrade"
 
 note: it is important that requirements.txt ends with new line at bottom or last package might not get read in
@@ -29,22 +31,9 @@ note: it is important that requirements.txt ends with new line at bottom or last
 todo:
 
 edit requirements files
-    - apt packages to install
-    - pip packages to install
-    - git repositories to download
+    - apt, pip, git, apm, ...
 
-maybe add error logging for pip_config && apt_extras
-
-
- alias terminatrix="terminator & exit"
-
----
-
-add scripts for other package managers like atom apm or radare2
-
-atom
-
-apm install
+alias terminatrix="terminator & exit"
 
 ---
 
@@ -54,7 +43,15 @@ $R2PM_DBDIR: No such file or directory.
 Run 'r2pm init' to initialize the package repository
 
 
+it seems like every time i use the ubuntu update/upgrade it always goes back to an old version.
+
+r2 -v
+radare2 0.9.6 @ linux-little-x86-64 git.0.9.6
+commit: 1: build: 2014-04-10
+
+then i have to uninstall and reinstall from git or something...
+
 ---
 
-rename the scripts  and lists to have more coherent names
+need to organize and catalog all of the packages for each thing
 

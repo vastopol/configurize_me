@@ -33,7 +33,7 @@ apt install python-pip
 apt install python3-pip
 
 # process file && try and install packages
-APT_FILE="apt_list.txt"
+APT_FILE="pkg_lists/apt_list.txt"
 ARRAY1=() # package names
 ARRAY2=() # error indices
 ERRVAL=0  # start index

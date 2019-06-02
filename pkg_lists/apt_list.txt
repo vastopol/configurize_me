@@ -85,7 +85,6 @@ python-nose
 python-pip
 qemu
 racket
-radare2
 rep
 rlwrap
 ruby
@@ -124,3 +123,17 @@ yacc
 zenlisp
 zenmap
 zsh
+upx
+hugs
+z88
+z80asm
+yasm
+steghide
+pngcheck
+binwalk
+foremost
+pigz
+gperf
+autopoint
+pdfcrack
+

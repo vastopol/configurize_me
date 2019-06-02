@@ -13,7 +13,7 @@ if [ $EXISTS1 != "/usr/bin/git" ] ; then
     exit 1
 fi
 
-GIT_FILE="git_list.txt"
+GIT_FILE="pkg_lists/git_list.txt"
 GIT_REPOS=()
 
 if ! [ -f $GIT_FILE ] ; then

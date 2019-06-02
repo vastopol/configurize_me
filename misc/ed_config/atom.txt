@@ -79,7 +79,7 @@ make-executable
 pdf-view
 script
 todo-show
-
-
+markdown-preview-plus
+markdown-pdf
 
 

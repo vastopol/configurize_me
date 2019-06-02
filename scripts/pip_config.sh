@@ -13,7 +13,7 @@ elif [ $EXISTS2 != "/usr/bin/pip3" ] ; then
     exit 1
 fi
 
-PIP_FILE="pip_list.txt"
+PIP_FILE="pkg_lists/pip_list.txt"
 
 if   ! [ -f $PIP_FILE ] ; then
     echo "ERROR: file $PIP_FILE does not exist"

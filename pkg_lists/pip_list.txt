@@ -1,0 +1,5 @@
+numpy
+scipy
+capstone
+pwntools
+markdown2pdf
