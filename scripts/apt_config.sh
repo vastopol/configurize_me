@@ -9,13 +9,13 @@ EXISTS1=$(eval "which apt")
 EXISTS2=$(eval "which apt-get")
 EXISTS3=$(eval "which apt-cache")
 
-if   [ $EXISTS1 != "/usr/bin/apt" ] ; then
+if   [ "$EXISTS1" != "/usr/bin/apt" ] ; then
     echo "ERROR: package 'apt' not installed"
     exit 1
-elif [ $EXISTS2 != "/usr/bin/apt-get" ] ; then
+elif [ "$EXISTS2" != "/usr/bin/apt-get" ] ; then
     echo "ERROR: package 'apt-get' not installed"
     exit 1
-elif [ $EXISTS3 != "/usr/bin/apt-cache" ] ; then
+elif [ "$EXISTS3" != "/usr/bin/apt-cache" ] ; then
     echo "ERROR: package 'apt-cache' not installed"
     exit 1
 fi
@@ -74,7 +74,7 @@ if ! [ ${#ARRAY2[@]} -eq 0 ] ; then
     echo "could not install packages:" >> error_log.txt
     for i in "${ARRAY2[@]}"
     do
-        echo ${ARRAY1[$i]} >> error_log.txt
+        echo "${ARRAY1[$i]}" >> error_log.txt
     done
 fi
 

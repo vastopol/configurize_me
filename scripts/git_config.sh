@@ -4,7 +4,7 @@
 
 EXISTS1=$(eval "which git")
 
-if [ $EXISTS1 != "/usr/bin/git" ] ; then
+if [ "$EXISTS1" != "/usr/bin/git" ] ; then
     echo "ERROR: package 'git' not installed"
     exit 1
 fi

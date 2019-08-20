@@ -29,5 +29,10 @@ script
 todo-show
 markdown-preview-plus
 markdown-pdf
-
-
+linter-shellcheck
+linter
+linter-ui-default
+intentions
+busy-signal
+language-awk
+language-tcl

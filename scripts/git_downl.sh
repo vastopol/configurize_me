@@ -8,7 +8,7 @@
 
 EXISTS1=$(eval "which git")
 
-if [ $EXISTS1 != "/usr/bin/git" ] ; then
+if [ "$EXISTS1" != "/usr/bin/git" ] ; then
     echo "ERROR: package 'git' not installed"
     exit 1
 fi
@@ -54,7 +54,7 @@ if ! [ ${#ARRAY2[@]} -eq 0 ] ; then
     echo "could not clone:" >> "$OLD_DIR"/error_log.txt
     for i in "${ARRAY2[@]}"
     do
-        echo ${GIT_REPOS[$i]} >> "$OLD_DIR"/error_log.txt
+        echo "${GIT_REPOS[$i]}" >> "$OLD_DIR"/error_log.txt
     done
 fi
 

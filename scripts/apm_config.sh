@@ -6,7 +6,7 @@
 # see if apm installed
 EXISTS1=$(eval "which apm")
 
-if   [ $EXISTS1 != "/usr/bin/apm" ] ; then
+if   [ "$EXISTS1" != "/usr/bin/apm" ] ; then
     echo "ERROR: package 'apm' not installed"
     exit 1
 fi
@@ -53,7 +53,7 @@ if ! [ ${#ARRAY2[@]} -eq 0 ] ; then
     echo "could not install packages:" >> error_log.txt
     for i in "${ARRAY2[@]}"
     do
-        echo ${ARRAY1[$i]} >> error_log.txt
+        echo "${ARRAY1[$i]}" >> error_log.txt
     done
 fi
 
