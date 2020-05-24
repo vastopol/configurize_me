@@ -36,3 +36,13 @@ intentions
 busy-signal
 language-awk
 language-tcl
+supercollider
+language-supercollider
+open-recent
+minimap
+highlight-selected
+minimap-highlight-selected
+linter-python
+linter-clang
+language-forth
+

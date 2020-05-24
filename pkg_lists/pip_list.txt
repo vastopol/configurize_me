@@ -1,5 +1,9 @@
 numpy
 scipy
+scikit-learn
 capstone
 pwntools
 markdown2pdf
+boltons
+more_itertools
+imx-nand-tools

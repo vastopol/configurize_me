@@ -55,3 +55,8 @@ then i have to uninstall and reinstall from git or something...
 
 need to organize and catalog all of the packages for each thing
 
+---
+
+recursive git modules:
+
+git submodule update --init --recursive

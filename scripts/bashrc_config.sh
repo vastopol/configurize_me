@@ -23,6 +23,7 @@ echo "" >> $BRC
 echo "alias gh='echo \"\"; git config -l; echo \"\"'" >> $BRC
 echo "alias rewifi='service network-manager restart'" >> $BRC
 echo "alias atom='ELECTRON_TRASH=gvfs-trash atom'"    >> $BRC
+echo "alias pycharm='pycharm-community'"              >> $BRC
 
 #----------------------------------------
 
